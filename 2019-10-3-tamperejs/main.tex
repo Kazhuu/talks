@@ -1,11 +1,12 @@
 \documentclass{beamer}
+\beamertemplatenavigationsymbolsempty
 
 \usepackage{minted}
 \usepackage{graphicx}
 
 \usetheme{Malmoe}
 
-\title{Why you should give vim a try}
+\title{Why You Should Give Vim a Try}
 \author{Mauri Mustonen (Kazhuu)}
 \date{October 3, 2019}
 
@@ -18,58 +19,130 @@
 \begin{document}
 \maketitle
 
-\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{images/learning-wall.jpeg}}
-\begin{frame}
-    \frametitle{Vim learning wall}
+\begin{frame}{Why I Recommend Vim}
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \begin{center}
+                \includegraphics[width=1\textwidth]{images/vim-logo.png}
+            \end{center}
+        \end{column}
+        \begin{column}{0.6\textwidth}
+            \begin{itemize}
+                \item Get rid of your mouse
+                \item Less time on unnecessary hand movement
+                    % When you get rid of above your efficiency will go up dramatically.
+                \item Much more efficient code editing
+                \item Highly customizable and extensible
+                \item Become one of \emph{those} people
+                \item Something else?
+            \end{itemize}
+        \end{column}
+    \end{columns}
 \end{frame}
 
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{images/me.jpg}}
+\begin{frame}{Where To Find Me}
+    \begin{itemize}
+        \item Web page: \url{https://mauri.codes}
+        \item GitHub: Kazhuu
+        \item LinkedIn: Mauri Mustonen
+    \end{itemize}
+\end{frame}
 \usebackgroundtemplate{}
-\begin{frame}
-    \frametitle{Where to find me}
-    www.mauri.codes
-    \begin{block}{Open Questions}
-        Is every even number the sum of two primes?
+
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{images/vim-learning-curve.png}}
+\begin{frame}{Vim Learning Wall}
+\end{frame}
+\usebackgroundtemplate{}
+
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{images/vim-modes.png}}
+\begin{frame}{Vim Is All About Modes}
+\end{frame}
+\usebackgroundtemplate{}
+
+\begin{frame}{Command language}
+\end{frame}
+
+\begin{frame}{How To Get Started}
+    \begin{block}{vimtutor}
+        vimtutor
     \end{block}
 \end{frame}
 
-\begin{frame}[fragile]
-    \frametitle{Code example}
+\begin{frame}
+    \frametitle{Where to find me}
+    \begin{block}{block}
+        Is every \alert{ven} number the sum of two primes?
+    \end{block}
+    \begin{theorem}
+        theorem lorem
+    \end{theorem}
+    \begin{proof}
+        proof lorem
+    \end{proof}
+    \begin{example}
+        example lorem
+    \end{example}
+\end{frame}
+
+\begin{frame}[fragile]{Code Example}
     \inputminted{js}{codes/example.js}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Second Slide}
+    \begin{itemize}
+        \item aaaa
+    \end{itemize}
+    \begin{description}
+        \item description lorem
+    \end{description}
 \end{frame}
 
+\begin{frame}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{images/cheat-sheet.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Summary}
+\end{frame}
+
+\begin{frame}[plain c]
+    \begin{center}
+        \huge Thank you for your time!
+    \end{center}
+    \begin{center}
+        Questions?
+    \end{center}
+\end{frame}
 \end{document}
 
 #if 0
 Question for the audience:
-* How many of you here uses Vim on there daily basis?
+* How many of you here uses Vim on daily basis?
 * How many of you have used Vim before?
 * How many of you have heard of vim but haven't give it a try?
 
-Start from basic stuff with learning wall and what vim is. Wall as a joke.
-With vim you only use the keyboard. Which in the end will make your code editing
-a lot faster.
+%With vim you only use the keyboard. Which in the end will make your code editing
+%a lot faster.
 You might be conserned about can vim do something that my current IDE can.
 Probably answer is yes.
-You will get rid of constant hand movement to your mouse and also to your arrow
-keys.
+%You will get rid of constant hand movement to your mouse and also to your arrow
+%keys.
 You will keep learning new things about vim for many years to come. There is
 quite often to better way to do things.
 At the beginning editing might seem slow and clungy but over time your will get
 better with practice.
 To practise vim try to push yourself to learn new things and how to do things
 better.
-When you get rid of your mouse and keybindings come naturally to you, your
-efficient as an editor will go up dramatically.
+%When you get rid of your mouse and keybindings come naturally to you, your
+%efficient as an editor will go up dramatically.
 Show some keybindings in action what are worth it. Change in stuff parenhesis,
 quetos etc.
 Vim will consumer your time to learn and configure. After that payoff will be
 worth it. Vim is hard because it's different. It's different because it's
 better.
-What modes vim has.
+%What modes vim has.
 Go through some vim features like motions, dot, registers.
 Go through some basic verbs and then text objects and motions on top of that.
 Vim plugin system. Some plugins I have (fzf, ag, NerdTree, YouCompleteMe)
