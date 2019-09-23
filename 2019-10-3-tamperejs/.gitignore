@@ -19,3 +19,4 @@
 *.vrb
 *.pygtex
 *.pygstyle
+Pipfile.lock
