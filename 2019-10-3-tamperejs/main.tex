@@ -1,4 +1,5 @@
 \documentclass{beamer}
+% Remove navigation bar from the slide show.
 \beamertemplatenavigationsymbolsempty
 
 \usepackage{minted}
@@ -58,23 +59,105 @@
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{images/vim-modes.png}}
 \begin{frame}{Vim Is All About Modes}
-    % Add keys to the image.
 \end{frame}
 \usebackgroundtemplate{}
 
 \begin{frame}{Basic Movement}
-    % Very basic Vim movement with h, j, k, l.
-    % gg and G
-    % f and F maybe
+    \begin{columns}
+        \begin{column}{0.2\textwidth}
+            \begin{itemize}
+                \item[--] \textbf{h}, \textbf{j}, \textbf{k}, \textbf{l}
+                \item[--] \textbf{w}
+                \item[--] \textbf{e}
+                \item[--] \textbf{b}
+                \item[--] \textbf{gg}
+                \item[--] \textbf{G}
+                \item[--] \textbf{0}
+                \item[--] \textbf{\$}
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.8\textwidth}
+            \begin{itemize}
+                \item left, down, up, right
+                \item move for\textbf{w}ard one word
+                \item move forward to \textbf{e}nd of the word
+                \item move \textbf{b}ackward one word
+                \item move to the top of the file
+                \item move to the bottom of the file
+                \item move to the beginning of the line
+                \item move to the end of the line
+            \end{itemize}
+        \end{column}
+    \end{columns}
+    \begin{center}
+        \large And more...
+    \end{center}
 \end{frame}
 
 \begin{frame}{Basic Editing}
-    % Undo, redo
-    % Yank for copy and p for paste.
+    \begin{columns}
+        \begin{column}{0.2\textwidth}
+            \begin{itemize}
+                \item[--] \textbf{i}
+                \item[--] \textbf{d}
+                \item[--] \textbf{c}
+                \item[--] \textbf{y}
+                \item[--] \textbf{p}
+                \item[--] \textbf{u}
+                \item[--] \textbf{ctrl+r}
+                \item[--] \textbf{.}
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.8\textwidth}
+            \begin{itemize}
+                \item \textbf{i}nsert
+                \item \textbf{d}elete
+                \item \textbf{c}hange
+                \item copy (\textbf{y}ank)
+                \item \textbf{p}aste
+                \item \textbf{u}ndo
+                \item \textbf{r}edo
+                \item repeat last command
+            \end{itemize}
+        \end{column}
+    \end{columns}
+    \begin{center}
+        \large And more...
+    \end{center}
 \end{frame}
 
-% Some slides before actually jumping to the edit commands. Maybe some basic
-% movement commands or something similar.
+\begin{frame}{Composing Commands}
+    \begin{center}
+        % Number is optional and can appear before or after command.
+        \large \textless number\textgreater \textless command\textgreater
+        \textless text object or motion\textgreater
+    \end{center}
+    \begin{columns}
+        \begin{column}{0.2\textwidth}
+            \begin{itemize}
+                \item[--] \textbf{dw}
+                \item[--] \textbf{yw}
+                \item[--] \textbf{2dw}
+                \item[--] \textbf{5j}
+                \item[--] \textbf{dd}
+                \item[--] \textbf{50G}
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                % Basic combining with commands.
+                \item \textbf{d}elete next \textbf{w}ord
+                \item copy/\textbf{y}ank \textbf{w}ord
+                % Adding numbers to commands.
+                \item \textbf{d}elete two following \textbf{w}ords
+                \item move down five lines
+                % Two times same will execute on line.
+                \item delete line
+                \item go to line 50
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
 
 \begin{frame}{Command Language}
     \begin{block}{How can I change all function parameters?}
@@ -115,10 +198,6 @@
     \end{center}
 \end{frame}
 
-\begin{frame}{Other Useful Commands}
-    Information about vim command language and it's syntax quickly.
-\end{frame}
-
 \begin{frame}{Configuring Vim}
     Vim settings file here.
 \end{frame}
@@ -134,6 +213,8 @@
         \item Learn Vim registers, no more losing your copy of text
         \item Learn to record macros and use them
         \item Learn to use repeat command with . key
+        \item Build your own cheat sheet
+        \item Learn to use Vim :help command
     \end{itemize}
 \end{frame}
 

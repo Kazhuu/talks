@@ -1,3 +1,3 @@
-function printName(param1, param2, param3) {
+function randomFunction(param1, param2, param3) {
   ...
 }
