@@ -20,8 +20,8 @@
 \begin{document}
 \maketitle
 
-\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{images/vim-learning-curve.png}}
 \begin{frame}{Vim Learning Wall}
+    \includegraphics[width=1\textwidth]{images/vim-learning-curve.png}
 \end{frame}
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{images/me.jpg}}
@@ -35,7 +35,7 @@
 \usebackgroundtemplate{}
 
 \usebackgroundtemplate{}
-\begin{frame}{Why I Recommend Vim}
+\begin{frame}{Why To Learn Vim}
     \begin{columns}
         \begin{column}{0.4\textwidth}
             \begin{center}
@@ -46,7 +46,6 @@
             \begin{itemize}
                 \item Get rid of your mouse
                 \item Less time on unnecessary hand movements
-                % When you get rid of above your efficiency will go up dramatically.
                 \item Much more efficient code editing
                 \item Highly customizable and extensible
                 \item Learn new things for many years to come
@@ -57,10 +56,13 @@
     \end{columns}
 \end{frame}
 
-\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{images/vim-modes.png}}
 \begin{frame}{Vim Is All About Modes}
+    \includegraphics[width=1\textwidth]{images/vim-modes.png}
 \end{frame}
-\usebackgroundtemplate{}
+
+\begin{frame}{Vim Is All About Modes}
+    \includegraphics[width=1\textwidth]{images/vim-modes-keys.png}
+\end{frame}
 
 \begin{frame}{Basic Movement}
     \begin{columns}
@@ -128,7 +130,6 @@
 
 \begin{frame}{Composing Commands}
     \begin{center}
-        % Number is optional and can appear before or after command.
         \large \textless number\textgreater \textless command\textgreater
         \textless text object/motion\textgreater
     \end{center}
@@ -145,13 +146,10 @@
         \end{column}
         \begin{column}{0.5\textwidth}
             \begin{itemize}
-                % Basic combining with commands.
                 \item \textbf{d}elete next \textbf{w}ord
                 \item copy/\textbf{y}ank \textbf{w}ord
-                % Adding numbers to commands.
                 \item \textbf{d}elete two following \textbf{w}ords
                 \item move down five lines
-                % Two times same will execute on line.
                 \item delete line
                 \item go to line 50
             \end{itemize}
@@ -173,7 +171,7 @@
 \end{frame}
 
 \begin{frame}{Command Language}
-    \begin{block}{How to change returned string?}
+    \begin{block}{How to change string inside quotes?}
     \end{block}
     \inputminted{js}{codes/changeInsideQuotes.js}
     \pause
@@ -198,21 +196,10 @@
     \end{center}
 \end{frame}
 
-% Talk about where .vimrc is located, what you can configure with it, set
-% keybindings here, add and configure plugins etc.
-% Mention to start with empty .vimrc and only add settings that you know what
-% you are doing.
-% Read others .vimrc files to learn and try them out.
-% Little by little modify Vim to your liking.
-% Put this file to version control or cloud based storage like dropbox.
 \begin{frame}{Configuring .vimrc}
     \includegraphics[width=1\textwidth]{images/vimrc.png}
 \end{frame}
 
-% Show some useful plugins in action.
-% Ask also if people know fzf or ag and have they used them?
-% Demonstrate fzf features on command line and then on vim.
-% Demo help with NERDTree to show you can documentation for plugins.
 \begin{frame}{Some Useful Plugins}
     \begin{itemize}
         \item NERDTree
@@ -222,8 +209,6 @@
     \end{itemize}
 \end{frame}
 
-% Demo tabs as views and using different nerd trees on them too.
-% Demo recording macro and execute it. Then repeat it with .
 \begin{frame}{Useful Tips}
     \begin{itemize}
         \item Escape to Caps Lock
@@ -280,6 +265,7 @@
         \item Make your own cheat sheet
         \item Take time and learn
         \item You will become much more efficient editing code
+        \item Highly customizable and extensible
     \end{itemize}
 \end{frame}
 
@@ -298,9 +284,6 @@
 
 #if 0
 Question for the audience:
-* How many of you here uses Vim on daily basis?
-* How many of you have used Vim before?
-* How many of you have heard of vim but haven't give it a try?
 
 %With vim you only use the keyboard. Which in the end will make your code editing
 %a lot faster.
